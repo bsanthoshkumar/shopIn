@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const StyledDiv = styled.div`
@@ -7,8 +8,11 @@ const StyledDiv = styled.div`
   width: 300px;
   height: 400px;
   border-radius: 10px;
-  box-shadow: 2px 3px 8px 2px lightgrey;
   padding: 5px;
+  margin: 20px 10px;
+  &:hover {
+    box-shadow: 2px 3px 8px 2px lightgrey;
+  }
 `;
 
 const StyledImg = styled.img`
@@ -23,6 +27,10 @@ const Title = styled.p`
   font-size: 20px;
   margin: 10px;
   height: 70px;
+  color: black;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 const Price = styled.div`
@@ -34,7 +42,13 @@ const Price = styled.div`
 const ProductView = ({ product }) => (
   <StyledDiv>
     <StyledImg src={product.thumbnail} />
-    <Title>{`${product.title.slice(0, 70)} ...`}</Title>
+    <NavLink
+      exact
+      to={`/product/${product.asin}`}
+      style={{ textDecoration: 'none' }}
+    >
+      <Title>{`${product.title.slice(0, 70)} ...`}</Title>
+    </NavLink>
     <Price>{`₹.${product.price['current_price']}`}</Price>
   </StyledDiv>
 );

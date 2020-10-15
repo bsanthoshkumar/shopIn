@@ -13,5 +13,10 @@ app.use((req, res, next) => {
 });
 
 app.get('/api/products', (req, res) => res.json(req.app.locals.db));
+app.get('/api/product/:id', (req, res) => {
+  const { id } = req.params;
+  const product = req.app.locals.db.find((product) => product.asin == id);
+  res.json(product);
+});
 
 app.listen(8000, () => console.log('listening on port 8000...'));

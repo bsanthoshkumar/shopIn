@@ -6,8 +6,9 @@ import ProductView from './ProductView';
 const StyledProducts = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin: 50px 50px;
+  margin: 20px 50px;
   justify-content: space-evenly;
+  padding-down: 200px;
 `;
 
 const getProductsView = (products) =>
@@ -26,7 +27,7 @@ const Products = (props) => {
     return <p>Loading...</p>;
   }
 
-  return <StyledProducts style={{}}>{getProductsView(products)}</StyledProducts>;
+  return <StyledProducts>{getProductsView(products)}</StyledProducts>;
 };
 
 export default Products;

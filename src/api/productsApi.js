@@ -6,6 +6,7 @@ const post = (body) => ({
 
 const ProductsAPI = {
   getAllProducts: () => fetch('/api/products').then((res) => res.json()),
+  getProduct: (id) => fetch(`/api/product/${id}`).then((res) => res.json()),
 };
 
 export default ProductsAPI;
