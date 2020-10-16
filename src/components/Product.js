@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import ProductsAPI from '../api/productsApi';
+import Price from './Price';
 
 const FlexDiv = styled.div`
   display: flex;
@@ -29,23 +30,6 @@ const Title = styled.p`
   margin-top: 100px;
 `;
 
-const Price = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 300px;
-  font-weight: 400;
-  font-size: 18px;
-  margin-top: 50px;
-`;
-
-const OldCost = styled.p`
-  color: grey;
-  text-decoration-line: line-through;
-`;
-
-const Percent = styled.p`
-  color: orange;
-`;
 const Product = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
@@ -65,11 +49,7 @@ const Product = () => {
       </ImageDiv>
       <div style={{ marginLeft: '50px' }}>
         <Title>{product.title}</Title>
-        <Price>
-          <p>{`₹.${product.price['current_price']}`}</p>
-          <OldCost>{`₹.${product.price['before_price']}`}</OldCost>
-          <Percent>{`(${product.price['savings_percent']}% off)`}</Percent>
-        </Price>
+        <Price price={product.price} />
       </div>
     </FlexDiv>
   );
