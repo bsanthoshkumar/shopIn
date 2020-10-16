@@ -4,27 +4,6 @@
   "category": "aps",
   "products": [
     {
-      "position": { "page": 1, "position": 1, "global_position": 1 },
-      "asin": "B08F5FHNGJ",
-      "price": {
-        "discounted": true,
-        "current_price": 0,
-        "currency": "INR",
-        "before_price": 1799,
-        "savings_amount": 1799,
-        "savings_percent": 100
-      },
-      "reviews": { "total_reviews": 6, "rating": 4 },
-      "url": "https://www.amazon.in/dp/B08F5FHNGJ",
-      "score": "24.00",
-      "sponsored": false,
-      "amazonChoice": false,
-      "bestSeller": false,
-      "amazonPrime": false,
-      "title": "Keya Fab Women's Taffeta silk embroidered Anarkali gown",
-      "thumbnail": "https://m.media-amazon.com/images/I/712+UAjx-jL._AC_UL320_.jpg"
-    },
-    {
       "position": { "page": 1, "position": 2, "global_position": 2 },
       "asin": "B08KQFB11K",
       "price": {
@@ -443,48 +422,6 @@
       "amazonPrime": false,
       "title": "Floral Trendz Women's Knee Length Multicolor Crepe Fabric One Piece Dress(Dresses)",
       "thumbnail": "https://m.media-amazon.com/images/I/71fWQZa9LxL._AC_UL320_.jpg"
-    },
-    {
-      "position": { "page": 1, "position": 31, "global_position": 31 },
-      "asin": "B08CH5DM66",
-      "price": {
-        "discounted": true,
-        "current_price": 0,
-        "currency": "INR",
-        "before_price": 1899,
-        "savings_amount": 1899,
-        "savings_percent": 100
-      },
-      "reviews": { "total_reviews": 571, "rating": 3.9 },
-      "url": "https://www.amazon.in/dp/B08CH5DM66",
-      "score": "2226.90",
-      "sponsored": false,
-      "amazonChoice": false,
-      "bestSeller": false,
-      "amazonPrime": false,
-      "title": "Dhruvi Women'S Maxi Dress",
-      "thumbnail": "https://m.media-amazon.com/images/I/817y0IGDDeL._AC_UL320_.jpg"
-    },
-    {
-      "position": { "page": 1, "position": 32, "global_position": 32 },
-      "asin": "B07SFW9WD8",
-      "price": {
-        "discounted": true,
-        "current_price": 0,
-        "currency": "INR",
-        "before_price": 1299,
-        "savings_amount": 1299,
-        "savings_percent": 100
-      },
-      "reviews": { "total_reviews": 162, "rating": 3.5 },
-      "url": "https://www.amazon.in/dp/B07SFW9WD8",
-      "score": "567.00",
-      "sponsored": false,
-      "amazonChoice": false,
-      "bestSeller": false,
-      "amazonPrime": false,
-      "title": "New Ethnic 4 You Women Long Fit & Flare Sttiched Gown(Multi-color)_GW01",
-      "thumbnail": "https://m.media-amazon.com/images/I/81M--kU7eWL._AC_UL320_.jpg"
     },
     {
       "position": { "page": 1, "position": 33, "global_position": 33 },

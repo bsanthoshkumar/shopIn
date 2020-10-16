@@ -109,27 +109,6 @@
       "thumbnail": "https://m.media-amazon.com/images/I/81EjWw5nkdL._AC_UL320_.jpg"
     },
     {
-      "position": { "page": 1, "position": 7, "global_position": 7 },
-      "asin": "B00PVUAJDW",
-      "price": {
-        "discounted": false,
-        "current_price": 0,
-        "currency": "INR",
-        "before_price": 0,
-        "savings_amount": 0,
-        "savings_percent": 0
-      },
-      "reviews": { "total_reviews": 926, "rating": 3.9 },
-      "url": "https://www.amazon.in/dp/B00PVUAJDW",
-      "score": "3611.40",
-      "sponsored": false,
-      "amazonChoice": false,
-      "bestSeller": false,
-      "amazonPrime": false,
-      "title": "Godrej Security Solutions Access SEEC9060 Electronic Safe (8 Litre) (Ivory)",
-      "thumbnail": "https://m.media-amazon.com/images/I/71x5Z5TkoNL._AC_UL320_.jpg"
-    },
-    {
       "position": { "page": 1, "position": 8, "global_position": 8 },
       "asin": "B00G7UWV9K",
       "price": {
@@ -319,48 +298,6 @@
       "thumbnail": "https://m.media-amazon.com/images/I/518yxmJVr8L._AC_UL320_.jpg"
     },
     {
-      "position": { "page": 1, "position": 17, "global_position": 17 },
-      "asin": "B01GNX31US",
-      "price": {
-        "discounted": true,
-        "current_price": 0,
-        "currency": "INR",
-        "before_price": 599,
-        "savings_amount": 599,
-        "savings_percent": 100
-      },
-      "reviews": { "total_reviews": 11249, "rating": 3.7 },
-      "url": "https://www.amazon.in/dp/B01GNX31US",
-      "score": "41621.30",
-      "sponsored": false,
-      "amazonChoice": false,
-      "bestSeller": true,
-      "amazonPrime": false,
-      "title": "Generic Electronic Kitchen Digital Weighing Scale, Multipurpose (White, 10 Kg)",
-      "thumbnail": "https://m.media-amazon.com/images/I/51qj9e5G00L._AC_UL320_.jpg"
-    },
-    {
-      "position": { "page": 1, "position": 18, "global_position": 18 },
-      "asin": "B01175RMMK",
-      "price": {
-        "discounted": false,
-        "current_price": 0,
-        "currency": "INR",
-        "before_price": 0,
-        "savings_amount": 0,
-        "savings_percent": 0
-      },
-      "reviews": { "total_reviews": 2040, "rating": 4.3 },
-      "url": "https://www.amazon.in/dp/B01175RMMK",
-      "score": "8772.00",
-      "sponsored": false,
-      "amazonChoice": false,
-      "bestSeller": false,
-      "amazonPrime": true,
-      "title": "PEESAFE Toilet Seat Sanitizer Spray - 75ml",
-      "thumbnail": "https://m.media-amazon.com/images/I/613nOm+JkDL._AC_UL320_.jpg"
-    },
-    {
       "position": { "page": 1, "position": 19, "global_position": 19 },
       "asin": "B07VQGVL68",
       "price": {
@@ -487,27 +424,6 @@
       "thumbnail": "https://m.media-amazon.com/images/I/615pipzACML._AC_UL320_.jpg"
     },
     {
-      "position": { "page": 1, "position": 25, "global_position": 25 },
-      "asin": "B01GN27RD6",
-      "price": {
-        "discounted": false,
-        "current_price": 0,
-        "currency": "INR",
-        "before_price": 0,
-        "savings_amount": 0,
-        "savings_percent": 0
-      },
-      "reviews": { "total_reviews": 1, "rating": 2 },
-      "url": "https://www.amazon.in/dp/B01GN27RD6",
-      "score": "2.00",
-      "sponsored": false,
-      "amazonChoice": false,
-      "bestSeller": false,
-      "amazonPrime": false,
-      "title": "Electronics: Circuits and Devices",
-      "thumbnail": "https://m.media-amazon.com/images/I/71DAXlN-jFL._AC_UL320_.jpg"
-    },
-    {
       "position": { "page": 1, "position": 26, "global_position": 26 },
       "asin": "B012CEKF1K",
       "price": {
@@ -527,27 +443,6 @@
       "amazonPrime": false,
       "title": "Sound Labs Raagini Digital, Electronic Tanpura",
       "thumbnail": "https://m.media-amazon.com/images/I/814lah+LbGL._AC_UL320_.jpg"
-    },
-    {
-      "position": { "page": 1, "position": 27, "global_position": 27 },
-      "asin": "B01LCGAE24",
-      "price": {
-        "discounted": true,
-        "current_price": 0,
-        "currency": "INR",
-        "before_price": 450,
-        "savings_amount": 450,
-        "savings_percent": 100
-      },
-      "reviews": { "total_reviews": 40, "rating": 4.2 },
-      "url": "https://www.amazon.in/dp/B01LCGAE24",
-      "score": "168.00",
-      "sponsored": false,
-      "amazonChoice": false,
-      "bestSeller": false,
-      "amazonPrime": true,
-      "title": "Bambalio 12 Digits BL-555M Large Display Electronic Calculator 3 Years Warranty.",
-      "thumbnail": "https://m.media-amazon.com/images/I/51G-6AGFwmL._AC_UL320_.jpg"
     },
     {
       "position": { "page": 1, "position": 28, "global_position": 28 },
@@ -781,27 +676,6 @@
       "thumbnail": "https://m.media-amazon.com/images/I/31lISxzTYXL._AC_UL320_.jpg"
     },
     {
-      "position": { "page": 1, "position": 42, "global_position": 42 },
-      "asin": "B07RR3QW2X",
-      "price": {
-        "discounted": true,
-        "current_price": 0,
-        "currency": "INR",
-        "before_price": 1499,
-        "savings_amount": 1499,
-        "savings_percent": 100
-      },
-      "reviews": { "total_reviews": 128, "rating": 3.6 },
-      "url": "https://www.amazon.in/dp/B07RR3QW2X",
-      "score": "460.80",
-      "sponsored": false,
-      "amazonChoice": false,
-      "bestSeller": false,
-      "amazonPrime": true,
-      "title": "REXBURG® Electronic Kitchen Digital Weighing Scale with Tare Function with Adaptor (10 Kg-SF 400A) - White",
-      "thumbnail": "https://m.media-amazon.com/images/I/61WYNPEXgdL._AC_UL320_.jpg"
-    },
-    {
       "position": { "page": 1, "position": 43, "global_position": 43 },
       "asin": "9339203402",
       "price": {
@@ -905,27 +779,6 @@
       "amazonPrime": true,
       "title": "Omron HV F013 Electronic Nerve Stimulator and Body Massager (White)",
       "thumbnail": "https://m.media-amazon.com/images/I/71PHyTg6JQL._AC_UL320_.jpg"
-    },
-    {
-      "position": { "page": 1, "position": 48, "global_position": 48 },
-      "asin": "B07MYH9N7F",
-      "price": {
-        "discounted": false,
-        "current_price": 0,
-        "currency": "INR",
-        "before_price": 0,
-        "savings_amount": 0,
-        "savings_percent": 0
-      },
-      "reviews": { "total_reviews": 115, "rating": 3.6 },
-      "url": "https://www.amazon.in/dp/B07MYH9N7F",
-      "score": "414.00",
-      "sponsored": false,
-      "amazonChoice": false,
-      "bestSeller": false,
-      "amazonPrime": false,
-      "title": "KHUSHIFAB Digital Electronic 10 Kg Weight Scale Machine LCD Kitchen Weight Scale for Measuring Fruits, Spice, Food, Vegeta...",
-      "thumbnail": "https://m.media-amazon.com/images/I/31Gn31w3nHL._AC_UL320_.jpg"
     },
     {
       "position": { "page": 1, "position": 49, "global_position": 49 },

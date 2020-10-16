@@ -10,7 +10,7 @@ const App = () => (
     <Switch>
       <Route exact path="/">
         <Header />
-        <Products />
+        <Products sortType={'Recommended'} />
       </Route>
       <Route exact path="/product/:id">
         <Header />

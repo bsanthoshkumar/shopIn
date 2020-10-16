@@ -319,27 +319,6 @@
       "thumbnail": "https://m.media-amazon.com/images/I/71oe3+JbscL._AC_UL320_.jpg"
     },
     {
-      "position": { "page": 1, "position": 17, "global_position": 17 },
-      "asin": "B07C3QN4DT",
-      "price": {
-        "discounted": true,
-        "current_price": 0,
-        "currency": "INR",
-        "before_price": 1999,
-        "savings_amount": 1999,
-        "savings_percent": 100
-      },
-      "reviews": { "total_reviews": 1161, "rating": 3.4 },
-      "url": "https://www.amazon.in/dp/B07C3QN4DT",
-      "score": "3947.40",
-      "sponsored": false,
-      "amazonChoice": false,
-      "bestSeller": false,
-      "amazonPrime": true,
-      "title": "Smile Mom Aluminium Spray Mop Set with Microfiber Washable Pad, Best 360 Degree Easy Floor Cleaning for Home & Office (Green)",
-      "thumbnail": "https://m.media-amazon.com/images/I/71LJzsd3AdL._AC_UL320_.jpg"
-    },
-    {
       "position": { "page": 1, "position": 18, "global_position": 18 },
       "asin": "B07MW3T9XB",
       "price": {
@@ -443,27 +422,6 @@
       "amazonPrime": true,
       "title": "Inalsa Vacuum Cleaner Wet and Dry Micro WD21-1600W with 3in1 Multifunction Wet/Dry/Blowing|Hepa Filteration & 21KPA Powerf...",
       "thumbnail": "https://m.media-amazon.com/images/I/61tffkijdtL._AC_UL320_.jpg"
-    },
-    {
-      "position": { "page": 1, "position": 23, "global_position": 23 },
-      "asin": "B086J3FBZV",
-      "price": {
-        "discounted": true,
-        "current_price": 0,
-        "currency": "INR",
-        "before_price": 999,
-        "savings_amount": 999,
-        "savings_percent": 100
-      },
-      "reviews": { "total_reviews": 1, "rating": 4 },
-      "url": "https://www.amazon.in/dp/B086J3FBZV",
-      "score": "4.00",
-      "sponsored": false,
-      "amazonChoice": false,
-      "bestSeller": false,
-      "amazonPrime": true,
-      "title": "SPEED 25 In 1 Mini Screwdriver Bits Set with Magnetic Flexible Extension Rod for Home Appliance, Laptop, Mobile, Computer ...",
-      "thumbnail": "https://m.media-amazon.com/images/I/81jQlClV7rL._AC_UL320_.jpg"
     },
     {
       "position": { "page": 1, "position": 24, "global_position": 24 },
@@ -632,27 +590,6 @@
       "amazonPrime": false,
       "title": "Classic Shoppe Wooden Serving and Cooking Spoons Wood Brown Spoons Kitchen Utensil Set of 7",
       "thumbnail": "https://m.media-amazon.com/images/I/41J5dIiPxtL._AC_UL320_.jpg"
-    },
-    {
-      "position": { "page": 1, "position": 32, "global_position": 32 },
-      "asin": "B06XY4C51D",
-      "price": {
-        "discounted": false,
-        "current_price": 0,
-        "currency": "INR",
-        "before_price": 0,
-        "savings_amount": 0,
-        "savings_percent": 0
-      },
-      "reviews": { "total_reviews": 170, "rating": 4.3 },
-      "url": "https://www.amazon.in/dp/B06XY4C51D",
-      "score": "731.00",
-      "sponsored": false,
-      "amazonChoice": false,
-      "bestSeller": false,
-      "amazonPrime": false,
-      "title": "SHOWPIN 12 in 1 Color Ring Magnetic Screwdriver Set, Multi-Purpose Repair Kit, Including Phillips, Torx, Flathead, Hex, Po...",
-      "thumbnail": "https://m.media-amazon.com/images/I/71nywP9yh3L._AC_UL320_.jpg"
     },
     {
       "position": { "page": 1, "position": 33, "global_position": 33 },
@@ -1012,27 +949,6 @@
       "thumbnail": "https://m.media-amazon.com/images/I/81FmgV2Fu0L._AC_UL320_.jpg"
     },
     {
-      "position": { "page": 1, "position": 54, "global_position": 54 },
-      "asin": "B00IPARBO0",
-      "price": {
-        "discounted": true,
-        "current_price": 0,
-        "currency": "INR",
-        "before_price": 2999,
-        "savings_amount": 2999,
-        "savings_percent": 100
-      },
-      "reviews": { "total_reviews": 155, "rating": 3.5 },
-      "url": "https://www.amazon.in/dp/B00IPARBO0",
-      "score": "542.50",
-      "sponsored": false,
-      "amazonChoice": false,
-      "bestSeller": false,
-      "amazonPrime": true,
-      "title": "Ciplaplast Plastic Brc-716 Crystal Cabinet (White)",
-      "thumbnail": "https://m.media-amazon.com/images/I/31XIpHoSIKL._AC_UL320_.jpg"
-    },
-    {
       "position": { "page": 1, "position": 55, "global_position": 55 },
       "asin": "B07T8GD66T",
       "price": {
@@ -1073,27 +989,6 @@
       "amazonPrime": true,
       "title": "RIVERSOFT SF-15 PRO abs shower and tap filter for hard water with 15 stage (Chrome, Pack of 1)",
       "thumbnail": "https://m.media-amazon.com/images/I/81RmyL+TpdL._AC_UL320_.jpg"
-    },
-    {
-      "position": { "page": 1, "position": 57, "global_position": 57 },
-      "asin": "B08B1W5QN5",
-      "price": {
-        "discounted": true,
-        "current_price": 0,
-        "currency": "INR",
-        "before_price": 500,
-        "savings_amount": 500,
-        "savings_percent": 100
-      },
-      "reviews": { "total_reviews": 2711, "rating": 3.9 },
-      "url": "https://www.amazon.in/dp/B08B1W5QN5",
-      "score": "10572.90",
-      "sponsored": false,
-      "amazonChoice": false,
-      "bestSeller": true,
-      "amazonPrime": true,
-      "title": "ASGARD® 3 Layer Protective Face Mask with NOSE CLIP, Certified by CE, ISO & GMP with Bacterial Filtration Efficiency(BFE)≥...",
-      "thumbnail": "https://m.media-amazon.com/images/I/71qshn-Y67L._AC_UL320_.jpg"
     },
     {
       "position": { "page": 1, "position": 58, "global_position": 58 },

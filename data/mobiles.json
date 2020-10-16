@@ -67,27 +67,6 @@
       "thumbnail": "https://m.media-amazon.com/images/I/81onqHVeECL._AC_UY218_.jpg"
     },
     {
-      "position": { "page": 1, "position": 4, "global_position": 4 },
-      "asin": "B089MQ622N",
-      "price": {
-        "discounted": true,
-        "current_price": 0,
-        "currency": "INR",
-        "before_price": 8499,
-        "savings_amount": 8499,
-        "savings_percent": 100
-      },
-      "reviews": { "total_reviews": 2529, "rating": 3.1 },
-      "url": "https://www.amazon.in/dp/B089MQ622N",
-      "score": "7839.90",
-      "sponsored": false,
-      "amazonChoice": false,
-      "bestSeller": false,
-      "amazonPrime": true,
-      "title": "Samsung Galaxy M01 Core (Black, 2GB RAM, 32GB Storage) with No Cost EMI/Additional Exchange Offers",
-      "thumbnail": "https://m.media-amazon.com/images/I/71AYb2AGHXL._AC_UY218_.jpg"
-    },
-    {
       "position": { "page": 1, "position": 5, "global_position": 5 },
       "asin": "B07X1KSLC3",
       "price": {

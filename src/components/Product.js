@@ -19,7 +19,7 @@ const ImageDiv = styled.div`
 
 const StyledImage = styled.img`
   width: 200px;
-  &;hover {
+  &:hover {
     border: solid 1px black;
   }
 `;

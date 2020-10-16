@@ -33,23 +33,46 @@ const Title = styled.p`
   }
 `;
 
+// const Price = styled.div`
+//   font-weight: 400;
+//   font-size: 18px;
+//   margin: 10px;
+// `;
+
 const Price = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
   font-weight: 400;
   font-size: 18px;
-  margin: 10px;
+`;
+
+const OldCost = styled.p`
+  color: grey;
+  text-decoration-line: line-through;
+`;
+
+const Percent = styled.p`
+  color: orange;
 `;
 
 const ProductView = ({ product }) => (
   <StyledDiv>
     <StyledImg src={product.thumbnail} />
-    <NavLink
-      exact
-      to={`/product/${product.asin}`}
-      style={{ textDecoration: 'none' }}
-    >
-      <Title>{`${product.title.slice(0, 70)} ...`}</Title>
-    </NavLink>
-    <Price>{`₹.${product.price['current_price']}`}</Price>
+    <div>
+      <NavLink
+        exact
+        to={`/product/${product.asin}`}
+        style={{ textDecoration: 'none' }}
+      >
+        <Title>{`${product.title.slice(0, 70)} ...`}</Title>
+      </NavLink>
+      <Price>
+        <p>{`₹.${product.price['current_price']}`}</p>
+        <OldCost>{`₹.${product.price['before_price']}`}</OldCost>
+        <Percent>{`(${product.price['savings_percent']}% off)`}</Percent>
+      </Price>
+    </div>
   </StyledDiv>
 );
 
