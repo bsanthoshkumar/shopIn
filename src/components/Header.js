@@ -23,11 +23,12 @@ const StyledCart = styled.img`
   margin: 20px;
 `;
 
-const Header = () => (
+const Header = ({ searchBar }) => (
   <StyledHeader>
     <NavLink to={'/'} style={{ textDecoration: 'none' }}>
       <StyledLogo>Shop In</StyledLogo>
     </NavLink>
+    {searchBar}
     <NavLink to={'/cart'}>
       <StyledCart src={cartImg} />
     </NavLink>

@@ -4,6 +4,7 @@ import { NavLink, useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import ProductsAPI from '../api/productsApi';
 import Price from './Price';
+import Header from './Header';
 
 const FlexDiv = styled.div`
   display: flex;
@@ -69,16 +70,20 @@ const Product = () => {
   }
 
   return (
-    <FlexDiv>
-      <ImageDiv>
-        <img src={product.thumbnail} />
-      </ImageDiv>
-      <div style={{ marginLeft: '50px' }}>
-        <Title>{product.title}</Title>
-        <Price price={product.price} />
-        {getCartButton(isInCart, product)}
-      </div>
-    </FlexDiv>
+    <div>
+      <Header />
+
+      <FlexDiv>
+        <ImageDiv>
+          <img src={product.thumbnail} />
+        </ImageDiv>
+        <div style={{ marginLeft: '50px' }}>
+          <Title>{product.title}</Title>
+          <Price price={product.price} />
+          {getCartButton(isInCart, product)}
+        </div>
+      </FlexDiv>
+    </div>
   );
 };
 

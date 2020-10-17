@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import ProductsAPI from '../api/productsApi';
 import ProductView from './ProductView';
+import Header from './Header';
 import useHover from './useHover';
+import SearchBar from './SearchBar';
 
 const StyledProducts = styled.div`
   display: flex;
@@ -122,8 +124,12 @@ const Products = () => {
     ProductsAPI.filterProducts(type).then(setProducts);
   };
 
+  const searchProducts = (text) =>
+    ProductsAPI.searchProducts(text).then(setProducts);
+
   return (
     <div>
+      <Header searchBar={<SearchBar onSubmit={searchProducts} />} />
       <Menubar>
         <Menu ref={sortRef}>
           <span style={{ padding: '5px' }}>

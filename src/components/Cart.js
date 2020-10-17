@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import ProductsAPI from '../api/productsApi';
 import ProductView from './ProductView';
+import Header from './Header';
 
 const StyledProducts = styled.div`
   display: flex;
@@ -58,6 +59,7 @@ const Cart = () => {
 
   return (
     <div>
+      <Header />
       <StyledProducts>
         {getProductsView(products, removeFromCart)}
       </StyledProducts>

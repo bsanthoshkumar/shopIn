@@ -46,4 +46,12 @@ app.get('/api/filter/:type', (req, res) => {
   res.json(products);
 });
 
+app.get('/api/search/:text', (req, res) => {
+  const { text } = req.params;
+  const products = req.app.locals.db.products.filter((p) =>
+    p.title.match(text)
+  );
+  res.json(products);
+});
+
 app.listen(8000, () => console.log('listening on port 8000...'));

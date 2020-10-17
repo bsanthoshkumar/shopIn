@@ -18,15 +18,12 @@ const App = () => (
         <Redirect to="/products" />
       </Route>
       <Route exact path="/products">
-        <Header />
         <Products />
       </Route>
       <Route exact path="/product/:id">
-        <Header />
         <Product />
       </Route>
       <Route exact path="/cart">
-        <Header />
         <Cart />
       </Route>
     </Switch>

@@ -9,6 +9,8 @@ const ProductsAPI = {
   getCart: () => fetch(`/api/cart`).then((res) => res.json()),
   filterProducts: (type) =>
     fetch(`/api/filter/${type}`).then((res) => res.json()),
+  searchProducts: (text) =>
+    fetch(`/api/search/${text}`).then((res) => res.json()),
 };
 
 export default ProductsAPI;
