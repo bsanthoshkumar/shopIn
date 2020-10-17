@@ -11,13 +11,13 @@ const StyledProducts = styled.div`
   justify-content: space-evenly;
 `;
 
-const Tools = styled.div`
+const Menubar = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin: 20px;
 `;
 
-const Sort = styled.div`
+const Menu = styled.div`
   display: flex;
   flex-direction: column;
   width: 260px;
@@ -26,14 +26,14 @@ const Sort = styled.div`
   color: rgba(0, 0, 0, 0.8);
 `;
 
-const SortOptions = styled.div`
+const MenuOptions = styled.div`
   position: absolute;
   margin-top: 35px;
   border: solid 1px lightgrey;
   background-color: white;
 `;
 
-const SortOption = styled.div`
+const MenuOption = styled.div`
   height: 30px;
   width: 250px;
   margin: 5px 0px;
@@ -64,23 +64,44 @@ const sortProductsByType = (products, type) => {
 };
 
 const getSortOptions = (isHovered, sortProducts) => (
-  <SortOptions style={{ display: `${isHovered ? 'block' : 'none'}` }}>
-    <SortOption onClick={() => sortProducts('Price: Low to High')}>
+  <MenuOptions style={{ display: `${isHovered ? 'block' : 'none'}` }}>
+    <MenuOption onClick={() => sortProducts('Price: Low to High')}>
       Price: Low to High
-    </SortOption>
-    <SortOption onClick={() => sortProducts('Price: High to Low')}>
+    </MenuOption>
+    <MenuOption onClick={() => sortProducts('Price: High to Low')}>
       Price: High to Low
-    </SortOption>
-    <SortOption onClick={() => sortProducts('Better discount')}>
+    </MenuOption>
+    <MenuOption onClick={() => sortProducts('Better discount')}>
       Better discount
-    </SortOption>
-  </SortOptions>
+    </MenuOption>
+  </MenuOptions>
 );
 
-const Products = ({ sortType }) => {
-  const [ref, isHovered] = useHover();
+const getFilterOptions = (isHovered, FilterProducts) => (
+  <MenuOptions style={{ display: `${isHovered ? 'block' : 'none'}` }}>
+    <MenuOption onClick={() => FilterProducts('Men dresses')}>
+      Men dresses
+    </MenuOption>
+    <MenuOption onClick={() => FilterProducts('Women dresses')}>
+      Women dresses
+    </MenuOption>
+    <MenuOption onClick={() => FilterProducts('Kids dresses')}>Kids</MenuOption>
+    <MenuOption onClick={() => FilterProducts('Electronics')}>
+      Electronics
+    </MenuOption>
+    <MenuOption onClick={() => FilterProducts('Mobiles')}>Mobiles</MenuOption>
+    <MenuOption onClick={() => FilterProducts('Home Appliances')}>
+      Home Appliances
+    </MenuOption>
+  </MenuOptions>
+);
+
+const Products = () => {
   const [products, setProducts] = useState(null);
-  const [sortState, setSortState] = useState(sortType || 'Recommended');
+  const [sortRef, isSortHovered] = useHover();
+  const [sortType, setSortType] = useState('Recommended');
+  const [filterRef, isFilterHovered] = useHover();
+  const [filterType, setFilterType] = useState('None');
 
   useEffect(() => {
     ProductsAPI.getAllProducts().then(setProducts);
@@ -91,20 +112,32 @@ const Products = ({ sortType }) => {
   }
 
   const sortProducts = (type) => {
-    setSortState(type);
+    setSortType(type);
     setProducts(sortProductsByType(products, type));
+  };
+
+  const filterProducts = (type) => {
+    setSortType('Recommended');
+    setFilterType(type);
+    ProductsAPI.filterProducts(type).then(setProducts);
   };
 
   return (
     <div>
-      <Tools>
-        <Sort ref={ref}>
+      <Menubar>
+        <Menu ref={sortRef}>
           <span style={{ padding: '5px' }}>
-            {'Sort By:'} <b>{sortState}</b>
+            {'Sort By:'} <b>{sortType}</b>
           </span>
-          {getSortOptions(isHovered, sortProducts)}
-        </Sort>
-      </Tools>
+          {getSortOptions(isSortHovered, sortProducts)}
+        </Menu>
+        <Menu ref={filterRef}>
+          <span style={{ padding: '5px' }}>
+            {'Filter By:'} <b>{filterType}</b>
+          </span>
+          {getFilterOptions(isFilterHovered, filterProducts)}
+        </Menu>
+      </Menubar>
       <StyledProducts>{getProductsView(products)}</StyledProducts>
     </div>
   );

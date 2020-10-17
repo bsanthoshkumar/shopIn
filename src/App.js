@@ -19,7 +19,7 @@ const App = () => (
       </Route>
       <Route exact path="/products">
         <Header />
-        <Products sortType={'Recommended'} />
+        <Products />
       </Route>
       <Route exact path="/product/:id">
         <Header />

@@ -20,6 +20,7 @@ app.get('/api/product/:id', (req, res) => {
   res.json({ product, isInCart });
 });
 
+app.get('/api/cart', (req, res) => res.json(req.app.locals.db.cart));
 app.get('/api/addToCart/:id', (req, res) => {
   const { id } = req.params;
   const product = req.app.locals.db.products.find(
@@ -37,5 +38,12 @@ app.get('/api/removeFromCart/:id', (req, res) => {
   res.json(req.app.locals.db.cart);
 });
 
-app.get('/api/cart', (req, res) => res.json(req.app.locals.db.cart));
+app.get('/api/filter/:type', (req, res) => {
+  const { type } = req.params;
+  const products = req.app.locals.db.products.filter(
+    (p) => p.categeory == type
+  );
+  res.json(products);
+});
+
 app.listen(8000, () => console.log('listening on port 8000...'));

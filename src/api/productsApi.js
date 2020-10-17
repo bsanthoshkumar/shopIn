@@ -7,6 +7,8 @@ const ProductsAPI = {
   removeFromCart: (id) =>
     fetch(`/api/removeFromCart/${id}`).then((res) => res.json()),
   getCart: () => fetch(`/api/cart`).then((res) => res.json()),
+  filterProducts: (type) =>
+    fetch(`/api/filter/${type}`).then((res) => res.json()),
 };
 
 export default ProductsAPI;
