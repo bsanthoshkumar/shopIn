@@ -1,27 +1,9 @@
 const express = require('express');
 const app = express();
 
-const menDresses = require('../../data/mendresses.json');
-const womenDresses = require('../../data/womendresses.json');
-const kidsDresses = require('../../data/kidsdresses.json');
-const electronics = require('../../data/electronics.json');
-const mobiles = require('../../data/mobiles.json');
-const homeappliances = require('../../data/homeappliances.json');
-const ladiesDresses = require('../../data/ladiesdresses.json');
-
+const productsData = require('../../data/products.json');
 app.use(express.json());
-app.locals.db = {
-  products: [
-    ...menDresses.products,
-    ...womenDresses.products,
-    ...kidsDresses.products,
-    ...electronics.products,
-    ...mobiles.products,
-    ...homeappliances.products,
-    ...ladiesDresses.products,
-  ],
-  cart: [],
-};
+app.locals.db = { products: productsData, cart: [] };
 
 app.use((req, res, next) => {
   console.log(req.method, req.url);
