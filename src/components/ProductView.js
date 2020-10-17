@@ -34,7 +34,20 @@ const Title = styled.p`
   }
 `;
 
-const ProductView = ({ product }) => (
+const CartButton = styled.button`
+  align-self: center;
+  font-size: 25px;
+  width: 230px;
+  background-color: #ff4dff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  &:hover {
+    transform: scale(1.03);
+  }
+`;
+
+const ProductView = ({ product, inCart, onClick }) => (
   <StyledDiv>
     <StyledImg src={product.thumbnail} />
     <div>
@@ -47,6 +60,13 @@ const ProductView = ({ product }) => (
       </NavLink>
       <Price price={product.price} />
     </div>
+    {inCart ? (
+      <CartButton onClick={() => onClick(product.asin)}>
+        Remove from cart
+      </CartButton>
+    ) : (
+      ''
+    )}
   </StyledDiv>
 );
 
