@@ -5,6 +5,8 @@ import styled from 'styled-components';
 import ProductsAPI from '../api/productsApi';
 import Price from './Price';
 import Header from './Header';
+import { useContext } from 'react';
+import UserContext from '../UserContext';
 
 const FlexDiv = styled.div`
   display: flex;
@@ -43,6 +45,7 @@ const Product = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [isInCart, setCartStatus] = useState(false);
+  const { user } = useContext(UserContext);
 
   useEffect(() => {
     ProductsAPI.getProduct(id).then(({ product, isInCart }) => {
@@ -80,7 +83,15 @@ const Product = () => {
         <div style={{ marginLeft: '50px' }}>
           <Title>{product.title}</Title>
           <Price price={product.price} />
-          {getCartButton(isInCart, product)}
+          {user ? (
+            getCartButton(isInCart, product)
+          ) : (
+            <CartButton
+              onClick={() => alert('Please login to add items to the cart')}
+            >
+              Add to cart
+            </CartButton>
+          )}
         </div>
       </FlexDiv>
     </div>

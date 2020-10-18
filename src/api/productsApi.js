@@ -1,6 +1,8 @@
 import fetch from 'node-fetch';
 
 const ProductsAPI = {
+  getUser: () => fetch('/api/getUser').then((res) => res.json()),
+  logout: () => fetch('/api/logout').then((res) => res.json()),
   getAllProducts: () => fetch('/api/products').then((res) => res.json()),
   getProduct: (id) => fetch(`/api/product/${id}`).then((res) => res.json()),
   addToCart: (id) => fetch(`/api/addToCart/${id}`).then((res) => res.json()),
