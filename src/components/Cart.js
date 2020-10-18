@@ -3,6 +3,9 @@ import styled from 'styled-components';
 import ProductsAPI from '../api/productsApi';
 import ProductView from './ProductView';
 import Header from './Header';
+import { useContext } from 'react';
+import UserContext from '../UserContext';
+import { Redirect } from 'react-router-dom';
 
 const StyledProducts = styled.div`
   display: flex;
@@ -45,6 +48,7 @@ const getTotalCost = (products) =>
 
 const Cart = () => {
   const [products, setProducts] = useState(null);
+  const { user } = useContext(UserContext);
 
   useEffect(() => {
     ProductsAPI.getCart().then(setProducts);
@@ -52,6 +56,10 @@ const Cart = () => {
 
   const removeFromCart = (id) =>
     ProductsAPI.removeFromCart(id).then(setProducts);
+
+  if (user == null) {
+    return <Redirect to="/" />;
+  }
 
   if (products == null) {
     return <p>Loading...</p>;
